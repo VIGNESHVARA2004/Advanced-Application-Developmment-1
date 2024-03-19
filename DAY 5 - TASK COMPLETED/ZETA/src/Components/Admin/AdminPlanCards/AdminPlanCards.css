@@ -1,0 +1,51 @@
+/* AdminPlanCards.css */
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .card-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Admin-card-actions {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    top: 5px;
+    right: 5px;
+    width:100px;
+  }
+  
+  .action-buttons{
+    position: relative;
+  }
+  .card-actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .card-actions button:hover {
+    color: blue;
+  }
+  
+  /* Icon styles (assuming you're using font awesome icons) */
+  .card-actions button i {
+    font-size: 1.2em;
+  }
+  
+  .action-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+  }

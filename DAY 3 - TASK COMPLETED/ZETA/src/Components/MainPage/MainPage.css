@@ -1,0 +1,226 @@
+.Main{
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Main-inner{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 5fr 0.8fr;
+  position: absolute;
+}
+
+.Main-LogoBar{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+}
+
+.Main-Logo{
+  display: flex;
+  justify-content: right;
+}
+
+.Main-Pages{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height :400px;
+  align-items: end;
+  position: relative;
+  justify-content: end;
+}
+
+.Main-Page{
+  transform: rotate(-90deg);
+  display: flex;
+  position: relative;
+  height : 40%;
+  width: 100%;
+  justify-content: center;
+  align-items: end;
+}
+
+.Main-Page p{
+  top:30px;
+  font-size: 20px;
+  height: 40px;
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.Main-Page p::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.Main-Page p:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.Main-LogoBar img{
+  height: 250px;
+  width: 140px;
+  margin-right: 3vw;
+  border :none;
+}
+
+.Main-zeta{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main-zeta-contentbox{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.Main-Navbar{
+display: flex;
+position: relative;
+width: 100%;
+height: 100%;
+color: black;
+justify-content: center;
+}
+
+.Main-Navbar-inner{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+gap: 5px;
+}
+
+.tabs{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 100%;
+justify-content: center;
+align-items: center;
+border-top: 1px solid black;
+border-right: 1px solid black;
+border-bottom: none;
+position: relative;
+}
+
+.tabs:first-child{
+  border-top: none;
+}
+
+.tabs-inner{
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs:hover h2{
+  text-decoration: underline;
+  transition: text-decoration 0.3s ease;
+}
+
+.tabs-inner p{
+  color: #808080;
+}
+/*.tabs h2:hover{
+  background-color: #663dff;
+  background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}*/
+
+.Main-zeta-contentbox h2{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.zeta-contentbox h3{
+  font-weight: 400;
+}
+
+.Main-Container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main-Container-box{
+  width: 100%;
+  height: 800px;
+  display: grid;
+  grid-template-rows: 0.3fr 7fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-outer{
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title{
+  display: grid;
+  width: auto;
+  grid-template-columns:  0.5fr 1fr 0.5fr;
+  align-items:center;
+  column-gap: 1.6rem;
+}
+
+.Title::before{
+  content: "";
+  height: 2px;
+  background-color: #663dff;
+  background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+  display: block;
+}
+
+.Title::after{
+  content: "";
+  height: 2px;
+  background-color: #663dff;
+  background-image: linear-gradient(-319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+
+  display: block;
+
+}
+
+.Content{
+  top: 3vh;
+  position: relative;
+  width: auto;
+  height: 100%;
+  flex:1;
+  overflow-y: auto;
+}
+
+.Content::-webkit-scrollbar{
+  display: none;
+}

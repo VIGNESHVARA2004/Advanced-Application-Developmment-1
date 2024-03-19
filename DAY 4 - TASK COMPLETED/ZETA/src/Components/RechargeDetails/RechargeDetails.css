@@ -1,0 +1,29 @@
+.recharge-details {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .back-link{
+    display: flex;
+    align-items: center;
+    gap:10px;
+  }
+  
+  .detail {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .value {
+    flex: 1;
+  }
+  

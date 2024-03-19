@@ -1,0 +1,49 @@
+.recharge-history {
+    width: 1200px;
+  }
+  
+  .table {
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .header {
+    font-weight: bold;
+  }
+  
+  .cell {
+    flex: 1;
+    padding: 8px;
+    border-bottom: solid 0.5px #D3D3D3;
+    text-align: center;
+  }
+  
+  .cell:first-child {
+    flex: 2; /* Adjust as needed */
+  }
+  
+  .body {
+    max-height: 650px; /* Adjust as needed */
+    overflow-y: auto;
+  }
+
+  .body::-webkit-scrollbar{
+    display: none;
+  }
+
+  .row-title{
+    border-bottom: solid 1px black;
+  }
+
+  .value{
+    margin-top: 10px;
+  }
+  
+  .value:hover{
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+    0 24px 46px var(--box-shadow-color);
+  }
